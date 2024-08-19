@@ -1,6 +1,6 @@
 ---
 name: chore-template
-about: 문서, 의존성, 프로젝트 환경 관리 등 잡다한 설정을 위한 Issue Template
+about: 별로 중요한 수정이 아닐 때 사용 (짬처리용, 비생산적인 경우)
 title: "[chore]"
 labels: chore
 assignees: OneTen19

@@ -1,6 +1,6 @@
 ---
-name: feature-template
-about: 새로운 기능 개발을 위한 Issue Template
+name: feat-template
+about: " 기능 구현시 사용"
 title: "[feat]"
 labels: feat
 assignees: OneTen19
