@@ -13,12 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            
-            FormField(value: $mail, icon: "mail", placeholder: "E-mail")
-            
-            FormField(value: $password, icon: "lock", placeholder: "Password", isSecure: true)
-            
 
+            Text("다시 시작")
 
         }
     }
