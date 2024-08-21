@@ -32,6 +32,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C648EDC2C756F3D00C8F627 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6C648EDD2C756F4000C8F627 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C648EDE2C756F4100C8F627 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C648EDF2C756F4300C8F627 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6C648EE12C756F9E00C8F627 /* Authentication */,
+				6C648EE22C75700700C8F627 /* Feed */,
+				6C648EE32C75700A00C8F627 /* Profile */,
+				6C648EE42C75701300C8F627 /* Root */,
+				6C648EE52C75701D00C8F627 /* Search */,
+				6C648EE62C75704600C8F627 /* TabBar */,
+				6C648EE72C75704700C8F627 /* UploadPost */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6C648EE02C756F4500C8F627 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6CE39E9E2C730D1000B5E223 /* InstagramCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6C648EE12C756F9E00C8F627 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6C648EE22C75700700C8F627 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		6C648EE32C75700A00C8F627 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6C648EE42C75701300C8F627 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6C648EE52C75701D00C8F627 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6C648EE62C75704600C8F627 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6C648EE72C75704700C8F627 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
 		6CE39E922C730D1000B5E223 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +143,13 @@
 		6CE39E9D2C730D1000B5E223 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				6CE39E9E2C730D1000B5E223 /* InstagramCloneApp.swift */,
-				6CE39EA22C730D1100B5E223 /* Assets.xcassets */,
+				6C648EE02C756F4500C8F627 /* App */,
+				6C648EDF2C756F4300C8F627 /* Core */,
+				6C648EDE2C756F4100C8F627 /* Extensions */,
+				6C648EDD2C756F4000C8F627 /* Model */,
+				6C648EDC2C756F3D00C8F627 /* Services */,
 				6CE39EA02C730D1000B5E223 /* ContentView.swift */,
+				6CE39EA22C730D1100B5E223 /* Assets.xcassets */,
 				6CE39EA42C730D1100B5E223 /* Preview Content */,
 			);
 			path = InstagramClone;
