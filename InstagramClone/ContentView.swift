@@ -12,11 +12,7 @@ struct ContentView: View {
     @State private var password: String = ""
     
     var body: some View {
-        VStack{
-
-            Text("다시 시작")
-
-        }
+        MainTabView()
     }
 }
 
