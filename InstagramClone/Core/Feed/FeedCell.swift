@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct FeedCell: View {
+    let post: Post
+    
     var body: some View {
         VStack{
             // image + username
             HStack{
-                Image("PostImage")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
-                
-                Text("OneTen")
-                    .font(.footnote)
-                    .fontWeight(.semibold)
+                if let user = post.user {
+                    Image(user.profileImageUrl ?? "")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                    
+                    Text(user.username)
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                }
                 
                 Spacer()
             }
@@ -28,7 +32,7 @@ struct FeedCell: View {
             
             
             // post image
-            Image("PostImage")
+            Image(post.imageurl)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -66,7 +70,7 @@ struct FeedCell: View {
             
             
             // likes label
-            Text("23 likes")
+            Text("\(post.likes) likes")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -76,15 +80,15 @@ struct FeedCell: View {
             
             // caption label
             HStack{
-                Text("OneTen ").fontWeight(.bold) +
-                Text("이 사진은 마녀배달부 키키의 사진입니다.")
+                Text("\(post.user?.username ?? "") ").fontWeight(.bold) +
+                Text(post.caption)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 10)
             .padding(.top, 1)
             .font(.footnote)
             
-            Text("6h ago")
+            Text("\(post.timestamp)")
                 .font(.footnote)
                 .foregroundStyle(.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -95,5 +99,5 @@ struct FeedCell: View {
 }
 
 #Preview {
-    FeedCell()
+    FeedCell(post: Post.MOCK_POSTS[1])
 }
