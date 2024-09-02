@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedCell: View {
     let post: Post
@@ -28,7 +29,7 @@ struct FeedCell: View {
             
             
             // post image
-            Image(post.imageurl)
+            KFImage(URL(string: post.imageurl))
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -84,7 +85,7 @@ struct FeedCell: View {
             .padding(.top, 1)
             .font(.footnote)
             
-            Text("\(post.timestamp)")
+            Text("\(post.timestamp.dateValue())")
                 .font(.footnote)
                 .foregroundStyle(.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
