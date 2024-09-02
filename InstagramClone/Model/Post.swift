@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct Post: Identifiable, Hashable, Codable {
     let id: String
@@ -13,7 +14,7 @@ struct Post: Identifiable, Hashable, Codable {
     let caption: String
     var likes: Int
     let imageurl: String
-    let timestamp: Date
+    let timestamp: Timestamp
     var user: User?
 }
 
@@ -25,7 +26,7 @@ extension Post {
             caption: "This is test ppost caption 1",
             likes: 123,
             imageurl: "user01",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         .init(
@@ -34,7 +35,7 @@ extension Post {
             caption: "This is test ppost caption 2",
             likes: 107,
             imageurl: "user02",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[2]
         ),
         .init(
@@ -43,7 +44,7 @@ extension Post {
             caption: "This is test ppost caption 3",
             likes: 79,
             imageurl: "user03",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[1]
         ),
         .init(
@@ -52,7 +53,7 @@ extension Post {
             caption: "This is test ppost caption 4",
             likes: 256,
             imageurl: "user04",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[3]
         )
     ]

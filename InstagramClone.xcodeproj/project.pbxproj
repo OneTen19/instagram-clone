@@ -100,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C25E81D2C857C0A00D57829 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C38B98C2C7C3C6F00B941FC /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C25E81E2C857C1700D57829 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C38B98A2C7C377C00B941FC /* UploadPostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6C38B9972C7C4FEC00B941FC /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,8 +266,8 @@
 		6C648EE72C75704700C8F627 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
-				6C38B98A2C7C377C00B941FC /* UploadPostView.swift */,
-				6C38B98C2C7C3C6F00B941FC /* UploadPostViewModel.swift */,
+				6C25E81E2C857C1700D57829 /* View */,
+				6C25E81D2C857C0A00D57829 /* ViewModel */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
